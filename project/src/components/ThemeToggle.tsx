@@ -27,7 +27,7 @@ export const ThemeToggle = () => {
             setIsDarkMode(true);
 
         }
-    }
+    };
 
 
     return (
