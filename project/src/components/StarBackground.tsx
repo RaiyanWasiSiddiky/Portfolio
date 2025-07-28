@@ -71,7 +71,7 @@ export const StarBackground = () => {
                 size: Math.random() * 2 + 1, // Random size between 1 and 3
                 x: Math.random() * 100, // Random x position in percentage
                 y: Math.random() * 50, // Random y position in percentage
-                delay: Math.random() * 10, // Random delay between 0 and 15 seconds 
+                delay: Math.random() * 5, // Random delay between 0 and 5 seconds 
                 animationDuration: Math.random() * 3 + 3, // Random duration between 3 and 6 seconds
             });
 
@@ -87,16 +87,16 @@ export const StarBackground = () => {
         <div className='fixed inset-0 overflow-hidden pointer-events-none z-0'>
             {stars.map((star) => (
                 <div 
-                    key={star.id} 
-                    className='star animate-pulse-subtle' 
-                    style={{
-                        width: star.size + 'px',
-                        height: star.size + 'px',
-                        left:  star.x + '%',
-                        top: star.y + '%',
-                        opacity: star.opacity,
-                        animationDuration: star.animationDuration + 's',
-                    }}
+                key={star.id} 
+                className='star animate-pulse-subtle' 
+                style={{
+                    width: star.size + 'px',
+                    height: star.size + 'px',
+                    left:  star.x + '%',
+                    top: star.y + '%',
+                    opacity: star.opacity,
+                    animationDuration: star.animationDuration + 's',
+                }}
                 />
             ))
             }
@@ -104,17 +104,17 @@ export const StarBackground = () => {
 
             {meteors.map((meteor) => (
                 <div 
-                    key={meteor.id} 
-                    className='meteor animate-meteor' 
-                    style={{
-                        width: meteor.size * 50 + 'px',
-                        height: meteor.size * 2 + 'px',
-                        left:  meteor.x + '%',
-                        top: meteor.y + '%',
-                        animationDelay: meteor.delay + 's',
-                        animationDuration: meteor.animationDuration + 's',
-                        transform: 'rotate(215deg)', // Important!
-                    }}
+                key={meteor.id} 
+                className='meteor animate-meteor' 
+                style={{
+                    width: meteor.size * 50 + 'px',
+                    height: meteor.size * 2 + 'px',
+                    left:  meteor.x + '%',
+                    top: meteor.y + '%',
+                    animationDelay: meteor.delay + 's',
+                    animationDuration: meteor.animationDuration + 's',
+                    transform: 'rotate(215deg)', // Important!
+                }}
                 />
             ))
             }
