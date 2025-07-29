@@ -27,9 +27,10 @@ export const AboutSection = () => {
                             </a>
 
                             <a 
-                                href="#"
+                                href="/Raiyan_Wasi_Siddiky_CV.pdf"
                                 className="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 
                                 transition-transform duration-300 hover:scale-105 active:scale-95"
+                                download
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
