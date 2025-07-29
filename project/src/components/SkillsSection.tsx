@@ -3,34 +3,38 @@ import { cn } from '../lib/utils';
 import { useInView } from 'react-intersection-observer';
 
 type skill = {
-    name: string;
-    level: number;
-    category: string;
-}
+  name: string;
+  level: number; // 0–100
+  category: string;
+};
 
 const skills: skill[] = [
-    // Frontend
-    { name: 'HTML', level: 70, category: 'frontend' },
-    { name: 'CSS', level: 70, category: 'frontend' },
-    { name: 'JavaScript', level: 60, category: 'frontend' },
-    { name: 'React', level: 50, category: 'frontend' },
-    { name: 'Next.js', level: 50, category: 'frontend' },
+    // Machine Learning
+  { name: 'Python', level: 85, category: 'ml' },
+  { name: 'TensorFlow', level: 60, category: 'ml' },
 
-    // Backend
-    { name: 'Node.js', level: 50, category: 'backend' },
-    { name: 'Express.js', level: 50, category: 'backend' },
-    { name: 'MongoDB', level: 40, category: 'backend' },
-    { name: 'PostgreSQL', level: 40, category: 'backend' },
+  // Frontend
+  { name: 'HTML', level: 80, category: 'frontend' },
+  { name: 'CSS', level: 75, category: 'frontend' },
+  { name: 'JavaScript', level: 75, category: 'frontend' },
+  { name: 'TypeScript', level: 75, category: 'frontend' },
+  { name: 'React', level: 70, category: 'frontend' },
 
-    // Tools
-    { name: 'Git', level: 60, category: 'tools' },
-    { name: 'Docker', level: 40, category: 'tools' },
-    { name: 'Webpack', level: 40, category: 'tools' },
-    { name: 'Babel', level: 40, category: 'tools' },
-    
+  // Backend
+  { name: 'Node.js', level: 65, category: 'backend' },
+  { name: 'Express.js', level: 60, category: 'backend' },
+  { name: 'PHP', level: 60, category: 'backend' },
+
+  // Database
+  { name: 'MySQL', level: 70, category: 'database' },
+  { name: 'MongoDB', level: 55, category: 'database' },
+
+  // Tools
+  { name: 'Git', level: 70, category: 'tools' },
+  { name: 'Docker', level: 50, category: 'tools' },
 ];
 
-const categories = ['all', 'frontend', 'backend', 'tools'];
+const categories = ['all', 'frontend', 'backend', 'database', 'ml', 'tools'];
 
 
 export const SkillsSection = () => {

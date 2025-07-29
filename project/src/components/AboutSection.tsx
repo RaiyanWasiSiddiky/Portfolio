@@ -11,80 +11,89 @@ export const AboutSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
+
                         <h3 className="text-2xl font-semibold">
-                            Passionate Web Developer & Tech Creator
+                        Full-Stack Developer & AI Enthusiast
                         </h3>
 
                         <p className="text-muted-foreground">
-                            A fresh Graduate with a passion for web development and a keen interest
-                            in creating innovative tech solutions. 
-                            I love building things with code and exploring the endless possibilities of technology.
+                        A Computer Science graduate from BRAC University with a passion for Artificial Intelligence, Data Analysis and Web Development. 
+                        I enjoy analyzing and exploring data and then using machine learning models to extract and extrapolate information from said data. Oooh, and I also like building modern web apps with the MERN stack.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-
                             <a href="#contact" className="cosmic-button">
                                 Get in Touch
                             </a>
 
                             <a 
-                            href="link to cv" 
-                            className="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 
-                            transition-transform duration-300 hover:scale-105 active:scale-95"
+                                href="#"
+                                className="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 
+                                transition-transform duration-300 hover:scale-105 active:scale-95"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Download CV
                             </a>
+
                         </div>
-                        
                     </div>
 
-
-                    <div className="grid gird-cols-1 gap-6">
-
+                    <div className="grid grid-cols-1 gap-6">
                         {/* Skill Cards */}
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
+
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Code className="h-6 w-6 text-primary"/>
+                                    <Code className="h-6 w-6 text-primary" />
                                 </div>
+
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Web Development</h4>
+                                    <h4 className="font-semibold text-lg">Full-Stack Development</h4>
                                     <p className="text-muted-foreground">
-                                        Creating responsive and dynamic web applications using modern technologies.
+                                        Building responsive and secure web applications using MongoDB, Express, React, and Node.js.
                                     </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6 text-primary"/>
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">UI/UX design</h4>
-                                    <p className="text-muted-foreground">
-                                        Designing user-friendly interfaces and experiences that enhance usability and engagement.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Briefcase className="h-6 w-6 text-primary"/>
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Project Management</h4>
-                                    <p className="text-muted-foreground">
-                                        Managing projects from conception to completion, ensuring timely delivery and quality.
-                                    </p>
-                                </div>
+
                             </div>
                         </div>
 
+                        <div className="gradient-border p-6 card-hover">
+                            <div className="flex items-start gap-4">
+
+                                <div className="p-3 rounded-full bg-primary/10">
+                                    <Briefcase className="h-6 w-6 text-primary" />
+                                </div>
+
+                                <div className="text-left">
+                                    <h4 className="font-semibold text-lg">Machine Learning & NLP</h4>
+                                    <p className="text-muted-foreground">
+                                        Experience training deep learning models (LSTM, BERT) for natural language processing tasks.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="gradient-border p-6 card-hover">
+                            <div className="flex items-start gap-4">
+
+                                <div className="p-3 rounded-full bg-primary/10">
+                                    <User className="h-6 w-6 text-primary" />
+                                </div>
+
+                                <div className="text-left">
+                                    <h4 className="font-semibold text-lg">Team & Project Management</h4>
+                                    <p className="text-muted-foreground">
+                                        Delivered projects using Agile practices with tools like Trello and Git in collaborative environments.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     </div>
 
-                </div>
 
             </div>
         </section>
